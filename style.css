@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(184, 184, 184);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-radius: 50px;
+    margin-right: 10px;
+    box-shadow: inset 3px 3px 4px rgb(255, 255, 255),
+                inset -3px -3px 4px rgb(36, 36, 36);
+    transition: box-shadow 200ms ease-in-out;
+}
+.input:focus {
+    box-shadow: inset 3px 3px 4px black,
+                inset -3px -3px 4px white;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    width: calc(2rem + 24px);
+    height: calc(2rem + 24px);
+    box-shadow: inset 3px 3px 4px white,
+                inset -3px -3px 4px rgb(36, 36, 36);
+    color: rgb(184,184,184);
+}
+button:active {
+    box-shadow: inset 3px 3px 4px black,
+                inset -3px -3px 4px white;
+    color: rgb(30, 0, 87);
+}
